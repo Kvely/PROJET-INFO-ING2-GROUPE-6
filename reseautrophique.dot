@@ -1,0 +1,13 @@
+digraph ReseauTrophique {
+  "0" [label="Graminees"];
+  "1" [label="Gazelle"];
+  "2" [label="Zebre"];
+  "3" [label="Hyene"];
+  "4" [label="Lion"];
+  "5" [label="Aigle"];
+  "0" -> "1";
+  "0" -> "2";
+  "1" -> "3";
+  "1" -> "4";
+  "1" -> "5";
+}

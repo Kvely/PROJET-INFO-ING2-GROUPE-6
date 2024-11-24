@@ -1,0 +1,12 @@
+id,nom,type,niveau_trophique,population
+0,Arbres,Producteur,1,100.00
+1,Plantes_herbacees,Producteur,1,100.00
+2,Pucerons,Consommateur primaire,2,100.00
+3,Autres_insectes_herbivores,Consommateur primaire,2,100.00
+4,Coccinelles,Consommateur secondaire,3,100.00
+5,Syrphes,Consommateur secondaire,3,100.00
+6,Chrysopes,Consommateur secondaire,3,100.00
+7,Oiseaux_insectivores,Consommateur tertiaire,4,100.00
+8,Araignees,Consommateur tertiaire,4,100.00
+9,Champignons,Decomposeur,1,100.00
+10,Bacteries_du_sol,Decomposeur,1,100.00

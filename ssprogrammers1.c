@@ -218,7 +218,6 @@ void charger_reseau(ReseauTrophique* reseau, const char* nom_fichier) {
     fclose(file);
 }
 
-
 void initialiser_reseau_foret_temperee(ReseauTrophique* reseau) {
     strcpy(reseau->ecosysteme, "Ecosysteme de foret temperee");
     strcpy(reseau->region, "Europe centrale");

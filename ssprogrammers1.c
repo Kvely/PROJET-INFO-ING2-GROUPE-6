@@ -105,7 +105,6 @@ void ajouter_relation(ReseauTrophique* reseau, const char* predateur_nom, const 
     }
 }
 
-
 // Fonction pour afficher le réseau trophique
 void afficher_reseau(ReseauTrophique* reseau) {
     printf("Reseau Trophique:\n");
@@ -139,7 +138,6 @@ void afficher_contexte_reseau(ReseauTrophique* reseau) {
     printf("Region : %s\n", reseau->region);
     printf("Climat : %s\n", reseau->climat);
 }
-
 
 void initialiser_Reseau_Prairie(ReseauTrophique* reseau) {
     strcpy(reseau->ecosysteme, "Ecosysteme de Prairie");
@@ -340,10 +338,6 @@ void trouver_especes_une_seule_proie(ReseauTrophique* reseau_actuel) {
     printf("\n");
 }
 
-
-
-
-
 // Fonction pour calculer la complexité du réseau
 void calculer_complexite(ReseauTrophique* reseau) {
     int nb_especes = reseau->nb_especes;
@@ -377,7 +371,6 @@ void calculer_complexite(ReseauTrophique* reseau) {
     }
 }
 
-
 // Note: Cette fonction explore à la fois les proies et les prédateurs
 // pour assurer une exploration complète du réseau dans les deux directions
 void dfs(ReseauTrophique* reseau, int espece_index, bool* visite) {
@@ -400,7 +393,6 @@ void dfs(ReseauTrophique* reseau, int espece_index, bool* visite) {
     }
 }
 
-
 // Fonction pour vérifier la connexité du réseau trophique
 bool verifier_connexite(ReseauTrophique* reseau) {
     // Si le réseau est vide, il est considéré comme connexe
@@ -420,10 +412,7 @@ bool verifier_connexite(ReseauTrophique* reseau) {
     return true; // Toutes les espèces sont visitées, le réseau est connexe
 }
 
-
-
 // Fonction récursive pour explorer les chaînes alimentaires
-
 void dfs_chaine(ReseauTrophique* reseau, int espece_index, char* chaine) {
     // Obtenir un pointeur vers l'espèce courante
     Espece* e = &reseau->especes[espece_index];
@@ -462,11 +451,6 @@ void afficher_chaines_alimentaires(ReseauTrophique* reseau, const char* nom_espe
 
 }
 
-
-
-
-
-
 // Fonction pour calculer la centralité de degré de chaque espèce dans le réseau
 void calculer_centralite_degre(ReseauTrophique* reseau) {
     printf("Centralite de degre pour chaque espece :\n");
@@ -480,7 +464,6 @@ void calculer_centralite_degre(ReseauTrophique* reseau) {
         printf("%s : %d\n", e->nom, degre);
     }
 }
-
 
 // Fonction pour calculer l'intermédiarité de chaque espèce dans le réseau trophique
 void calculer_intermediarite(ReseauTrophique* reseau) {
